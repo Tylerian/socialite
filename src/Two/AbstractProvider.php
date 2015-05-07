@@ -178,11 +178,11 @@ abstract class AbstractProvider implements ProviderContract
     	    throw new BadMethodCallException;
     	}
     	
-		$user = $this->mapUserToObject(
-			$this->getUserByToken($token)
-		);
+    	$user = $this->mapUserToObject(
+    	    $this->getUserByToken($token)
+    	);
 		
-		return $user->setToken($token);
+	return $user->setToken($token);
     }
 
     /**
